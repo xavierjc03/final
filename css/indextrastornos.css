@@ -158,10 +158,18 @@ section {
 
 .section-section {
     flex: 1;
-    border: 1px solid #404044;
     padding: 75px;
 }
-
+section .contenedorsection .section-content .anitexto1, section .contenedorsection .section-content .anitexto2,
+section .contenedorsection .section-content .anitexto3, section .contenedorsection .section-content .anitexto4,
+section .contenedorsection .section-content .anitexto5, section .contenedorsection .section-content .anitexto6 {
+    opacity: 0;
+}
+section .contenedorsection .section-content .aniimg1, section .contenedorsection .section-content .aniimg2,
+section .contenedorsection .section-content .aniimg3, section .contenedorsection .section-content .aniimg4,
+section .contenedorsection .section-content .aniimg5, section .contenedorsection .section-content .aniimg6 {
+    opacity: 0;
+}
 /*Footer*/
 
 #container {

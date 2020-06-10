@@ -9,22 +9,23 @@ function mostraralerta(){
 }
 
 window.onload=hacerclic;
-
+var i = 0;
 $(function () {
     var animacion = $(".footer-classic").offset().top;
-    
+
+    var animaciones1 = document.querySelectorAll(".animacion1"); 
     $(window).scroll(function () {
-       
-      var wintop = $(window).scrollTop();
-      if (wintop > 1) {
-          $('body').addClass("salto");
-          $('header').addClass("header2");
-      }
-      else {
-          $('header').removeClass("header2");
-          $('body').removeClass("salto");
+
+        var wintop = $(window).scrollTop();
+        if (wintop > 1) {
+            $('body').addClass("salto");
+            $('header').addClass("header2");
         }
-        if ((animacion - wintop) <= 483) {
+        else {
+            $('header').removeClass("header2");
+            $('body').removeClass("salto");
+        }
+        if (($(".footer-classic").offset().top - wintop) <= 483) {
             $('.footer-section').css('opacity', '1');
             $('footer .footer-content .about').addClass("animar3");
             $('footer .footer-content .contact').addClass("animar4");
@@ -39,7 +40,53 @@ $(function () {
             $('header nav').css('position', 'absolute');
             $('header nav').css('bottom', '0');
         }
-        console.log($('h1').offset().top);
-        console.log(wintop);
+        if ($('.anitexto1').offset().top - 500 <= wintop && $('.anitexto1').offset().top - 100 >= wintop) {
+            $('.anitexto1').addClass("animar7");
+            $('section .contenedorsection .section-content .anitexto1').css('opacity', '1');
+        }
+        if ($('.anitexto2').offset().top - 500 <= wintop && $('.anitexto2').offset().top - 100 >= wintop) {
+            $('.anitexto2').addClass("animar6");
+            $('section .contenedorsection .section-content .anitexto2').css('opacity', '1');
+        }
+        if ($('.anitexto3').offset().top - 500 <= wintop && $('.anitexto3').offset().top - 100 >= wintop) {
+            $('.anitexto3').addClass("animar7");
+            $('section .contenedorsection .section-content .anitexto3').css('opacity', '1');
+        }
+        if ($('.anitexto4').offset().top - 500 <= wintop && $('.anitexto4').offset().top - 100 >= wintop) {
+            $('.anitexto4').addClass("animar6");
+            $('section .contenedorsection .section-content .anitexto4').css('opacity', '1');
+        }
+        if ($('.anitexto5').offset().top - 500 <= wintop && $('.anitexto5').offset().top - 100 >= wintop) {
+            $('.anitexto5').addClass("animar7");
+            $('section .contenedorsection .section-content .anitexto5').css('opacity', '1');
+        }
+        if ($('.anitexto6').offset().top - 500 <= wintop && $('.anitexto6').offset().top - 100 >= wintop) {
+            $('.anitexto6').addClass("animar6");
+            $('section .contenedorsection .section-content .anitexto6').css('opacity', '1');
+        }
+        if ($('.aniimg1').offset().top - 500 <= wintop && $('.aniimg1').offset().top - 100 >= wintop) {
+            $('.aniimg1').addClass("animar6");
+            $('section .contenedorsection .section-content .aniimg1').css('opacity', '1');
+        }
+        if ($('.aniimg2').offset().top - 500 <= wintop && $('.aniimg2').offset().top - 100 >= wintop) {
+            $('.aniimg2').addClass("animar7");
+            $('section .contenedorsection .section-content .aniimg2').css('opacity', '1');
+        }
+        if ($('.aniimg3').offset().top - 500 <= wintop && $('.aniimg3').offset().top - 100 >= wintop) {
+            $('.aniimg3').addClass("animar6");
+            $('section .contenedorsection .section-content .aniimg3').css('opacity', '1');
+        }
+        if ($('.aniimg4').offset().top - 500 <= wintop && $('.aniimg4').offset().top - 100 >= wintop) {
+            $('.aniimg4').addClass("animar7");
+            $('section .contenedorsection .section-content .aniimg4').css('opacity', '1');
+        }
+        if ($('.aniimg5').offset().top - 500 <= wintop && $('.aniimg5').offset().top - 100 >= wintop) {
+            $('.aniimg5').addClass("animar6");
+            $('section .contenedorsection .section-content .aniimg5').css('opacity', '1');
+        }
+        if ($('.aniimg6').offset().top - 500 <= wintop && $('.aniimg6').offset().top - 100 >= wintop) {
+            $('.aniimg6').addClass("animar7");
+            $('section .contenedorsection .section-content .aniimg6').css('opacity', '1');
+        }
     });
 });
