@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 #ajuste {
-    background: url('/Img/trast.jpg');
+    background: url('Img/trast.jpg');
     background-size: cover;
     background-position: center;
     background-color: rgb(100,100,100);
