@@ -22,7 +22,7 @@ $(function () {
             $('header').removeClass("header2");
             $('body').removeClass("salto");
         }
-        if (($(".footer-classic").offset().top - wintop) <=250) {
+        if (($(".footer-classic").offset().top - wintop) <= 450 || ($(".footer-classic").offset().top - wintop) <= 200)  {
             $('.footer-section').css('opacity', '1');
             $('footer .footer-content .about').addClass("animar2");
             $('footer .footer-content .contact').addClass("animar4");
