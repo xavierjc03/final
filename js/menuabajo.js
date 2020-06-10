@@ -1,33 +1,19 @@
-
-function hacerclic(){
-    document.querySelector("small").onclick=mostraralerta;
-}
-
-function mostraralerta(){
-    alert("INTEGRANTES: \nHenry Chiluisa \n Daniel Iza \n Ian Masache "+
-    "\n Andres Salazar \n Xavier Jaya \n Atik Yumbay");
-}
-
-window.onload=hacerclic;
-var i = 0;
 $(function () {
+    var menu = $(".posiciotexto").offset().top;
     $(window).scroll(function () {
 
         var wintop = $(window).scrollTop();
-        if (wintop > 1) {
-            $('body').addClass("salto");
-            $('header').addClass("header2");
+        if (wintop >= menu) {
+            $('header nav').css('position', 'fixed');
+            $('header').css('position', 'fixed');
+            $('header nav').css('bottom', '90.5%');
+            $('header').css('bottom', '90.5%');
         }
         else {
-            $('header').removeClass("header2");
-            $('body').removeClass("salto");
-        }
-        if (($(".footer-classic").offset().top - wintop) <=250) {
-            $('.footer-section').css('opacity', '1');
-            $('footer .footer-content .about').addClass("animar2");
-            $('footer .footer-content .contact').addClass("animar4");
-            $('footer .footer-content .links').addClass("animar3");
-            $('footer #container').addClass("animar5");
+            $('header nav').css('position', 'absolute');
+            $('header').css('position', 'absolute');
+            $('header nav').css('bottom', '0%');
+            $('header').css('bottom', '0%');
         }
         if ($('.anitexto1').offset().top - 500 <= wintop && $('.anitexto1').offset().top - 100 >= wintop) {
             $('.anitexto1').addClass("animar7");
