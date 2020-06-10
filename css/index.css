@@ -1,0 +1,234 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(246, 247, 245);
+    -webkit-transition: all 0.4s ease;
+    font-family: "Roboto";
+}
+/*header*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    padding-bottom: 100px;
+}
+header nav {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    bottom: 0;
+}
+.texto, .texto1, .texto2 {
+    text-align: center;
+    font-family: "Poppins";
+}
+
+header nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 0.3s ease;
+}
+
+header.header2 {
+    background-color: rgba(100,100,100,0.6);
+    padding-bottom: 0px;
+}
+
+#linea {
+    height: 1px;
+    width: 100%;
+    background-color: #a0a0a0;
+}
+
+nav a:hover {
+    background: #252932;
+    border-radius: 50px;
+}
+
+#ajuste {
+    background: url('D:/Descargas/Graficacion/final/Img/caratula.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(100,100,100);
+    background-blend-mode: soft-light;
+    background-attachment:fixed;
+}
+
+/*Sections*/
+section#ajuste {
+    height: 759px;
+}
+section.ajuste1 {
+    padding-bottom:200px;
+    font-family: "Roboto";
+}
+.texto1 {
+    color: powderblue;
+    font-size: 0.5em;
+}
+
+.texto2 {
+    font-family: "Poppins";
+    font-size: 100px;
+    letter-spacing: 0.01em;
+    padding-top: 250px;
+    color: white;
+    opacity: 1;
+    filter: alpha(opacity = 50);
+}
+
+section div p {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+section div a {
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.container1 {
+    max-width: 960px;
+}
+@media (min-width:700px) {
+    .w-full {
+        width: 40%;
+        flex-direction: column;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+}
+@media (max-width:700px) {
+    .w-full {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        margin-top: 40px;
+    }
+}
+.w-full1 {
+    padding: 20px;
+}
+
+.enla {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+section div img {
+    width: 380px;
+    height: 254px;
+}
+/*Footers*/
+
+#container {
+    width: 100%;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 25px;
+    opacity: 0;
+}
+
+.footer-classic .footer-content .about h1, .footer-classic .footer-content .footer-section p {
+    color: white;
+    text-align: justify;
+}
+
+    .footer-classic .footer-content .about h1 sup {
+        color: powderblue;
+        font-size: 0.5em;
+    }
+
+.footer-classic .footer-content .footer-section p {
+    font-family: Tahoma;
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+.footer-classic .footer-content .footer-section h1 span {
+    color: powderblue;
+    font-size: 0.5em;
+}
+
+
+.footer-classic {
+    padding: 30px;
+    background: #404044;
+    color: #aab2b9;
+    font-size: 16px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.contact div, .links a {
+    display: block;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #aab2b9;
+}
+
+.icon i {
+    width: 20px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.contact p, .links p {
+    font-size: 1.5em;
+    font-family: "Poppins";
+    color: white;
+    margin-bottom: 25px;
+}
+
+h4 {
+    padding-top: 20px;
+}
+
+.fa-phone, .fa-envelope-o {
+    color: powderblue;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-instagram {
+    color: hotpink;
+}
+
+.fa-twitter {
+    color: deepskyblue;
+}
