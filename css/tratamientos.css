@@ -17,6 +17,14 @@ body {
     width: 100px;
     height: 30px;
 }
+#map {
+    width: 50%;
+    height: 500px;
+    margin-top: 9%;
+    margin-left: 25%;
+    display:flex;
+}
+
 /*Header*/
 
 #ajuste {
@@ -177,6 +185,9 @@ section .contenedorsection .section-content .aniimg5, section .contenedorsection
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+}
+footer h1{
+    font-family:"Poppins";
 }
 @media(min-width:700px) {
     .footer-content {
