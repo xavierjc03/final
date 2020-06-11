@@ -67,7 +67,7 @@ nav a:hover {
 }
 
 #ajuste {
-    background: url('.css/Img/Caratula.png');
+    background: url('./Img/Caratula.png');
     background-size: cover;
     background-position: center;
     background-color: rgb(100,100,100);
